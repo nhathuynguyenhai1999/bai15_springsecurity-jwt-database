@@ -18,7 +18,6 @@ import java.util.Optional;
 public class UserService1 implements UserDetailsService {
     @Autowired
     private IUserRepository iUserRepository;
-    @Autowired
     private PasswordEncoder passwordEncoder;
     public List<UserDTO> findAll() {
         List<UserDTO> userDTOS = new ArrayList<>();
